@@ -35,7 +35,7 @@ This template assumes the following are already installed:
 
 1. Clone this repository
 1. Install the template using the dotnet CLI with `dotnet new -i ./` where the current directory contains the template's directory
-1. Copy `create_project.sh` into a location one directory above where you want your new project to live.
+1. Copy [`create_project.sh`](https://github.com/PlanetLotus/templates/blob/main/create_project.sh) into a location one directory above where you want your new project to live
 1. Run `./create_project.sh <PROJECTNAME>`
 
 That's it! For future projects, only the last step is necessary. Open your new project, build, and run to test.
