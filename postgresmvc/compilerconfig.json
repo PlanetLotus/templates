@@ -1,0 +1,9 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/site.min.css",
+    "inputFile": "Sass/site.scss",
+    "minify": {
+      "enabled": true
+    }
+  }
+]

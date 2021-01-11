@@ -1,0 +1,21 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@*https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-2.1&tabs=visual-studio#log-out-1 *@
+
+<ul class="navbar-nav">
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <li class="nav-item">
+            <form asp-controller="Account" asp-action="Logout" method="post" class="navbar-right">
+                <button type="submit" class="btn btn-link nav-link">Log out</button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li><a class="nav-link nav-link-override" asp-controller="Account" asp-action="Register">Sign up</a></li>
+        <li><a class="nav-link nav-link-override" asp-controller="Home" asp-action="Index">Log in</a></li>
+    }
+</ul>

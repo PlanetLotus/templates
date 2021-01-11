@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Matt Messmer",
+  "classifications": [ "Web", "MVC", "PostgreSQL" ],
+  "identity": "PostgresMvc.Dapper",
+  "name": "ASP.NET Core MVC with PostgreSQL and Dapper",
+  "shortName": "postgresmvc",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "postgresmvc",
+  "preferNameDirectory" : "true",
+  "sources": [
+    {
+        "modifiers": [
+            {
+                "exclude": [
+                    ".vs",
+                    "bin",
+                    "obj",
+                    "node_modules/**",
+                    ".env",
+                    "postgresmvc.csproj.user"
+                ]
+            }
+        ]
+    }
+  ]
+}
